@@ -17,32 +17,27 @@
             </h1>
 
             <nav class="header__nav nav">
-                <ul class="nav__list">
-                    <li class="nav__list-item">
-                        <a href="#" class="nav__list-link" title="Категория 1">
-                            Категория 1
-                        </a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a href="#" class="nav__list-link" title="Категория 2">
-                            Категория 2
-                        </a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a href="#" class="nav__list-link" title="Категория 3">
-                            Категория 3
-                        </a>
-                    </li>
-                    <li class="nav__list-item">
-                        <a href="#" class="nav__list-link" title="Категория 4">
-                            Категория 4
-                        </a>
-                    </li>
-                </ul>
+                <a href="#" class="nav__link" title="Категория 1">
+                    Категория 1
+                </a>
+                <a href="#" class="nav__link" title="Категория 2">
+                    Категория 2
+                </a>
+                <a href="#" class="nav__link" title="Категория 3">
+                    Категория 3
+                </a>
+                <a href="#" class="nav__link" title="Категория 4">
+                    Категория 4
+                </a>
 
                 <form class="search form" action="#" method="post">
-                    <input id="search" name="search-term" type="text" class="search__input input"
-                           title="Поле поиска" placeholder="Поиск">
+                    <input aria-invalid="false"
+                           aria-placeholder="Поиск"
+                           id="search"
+                           name="search-term"
+                           type="text"
+                           class="search__input input"
+                           title="Поле поиска">
 
                     <button type="submit" class="btn search__btn" title="Найти">
                         Найти
@@ -132,10 +127,11 @@
                     Его корни уходят в один фрагмент классической латыни
                     45 года н.э., то есть более двух тысячелетий назад.
                 </p>
-                <!--<button class="modal-link btn" type="button" onclick="window.modal.showModal()">-->
-                <button class="modal-link btn" type="button">
+                <div role="button"
+                     tabindex="0"
+                     class="modal-link btn">
                     Узнать больше о появлении Lorem Ipsum
-                </button>
+                </div>
                 <dialog class="modal" id="modal" aria-label="О появлении Lorem Ipsum">
                     <!--<button class="modal__close" onclick="window.modal.close()">&#x2715;</button>-->
                     <p>
@@ -180,7 +176,7 @@
                 <h3>
                     Помощь
                 </h3>
-                <ul class="footer__list">
+                <ul class="footer__list" role="navigation">
                     <li class="footer__list-item">
                         <a href="#" title="О нас">О нас</a>
                     </li>
@@ -200,7 +196,7 @@
                 <h3>
                     О нас
                 </h3>
-                <ul class="footer__list">
+                <ul class="footer__list" role="navigation">
                     <li class="footer__list-item">
                         <a href="#" title="Наша команда">Наша команда</a>
                     </li>

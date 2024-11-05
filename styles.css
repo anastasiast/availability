@@ -27,7 +27,7 @@ ul {
     padding: 0;
 }
 
-li a {
+li a, .nav__link {
     text-decoration: none;
     color: var(--main-color);
     display: inline-block;
@@ -35,7 +35,7 @@ li a {
     transition: all .3s ease-in-out;
 }
 
-li a:hover {
+li a:hover, .nav__link:hover {
     opacity: .6;
 }
 
@@ -78,15 +78,7 @@ li a:hover {
     justify-content: space-between;
 }
 
-.nav__list {
-    list-style-type: none;
-    padding: 0;
-    margin: 0 12px 0 0;
-    display: inline-flex;
-    align-items: center;
-}
-
-.nav__list-link {
+.nav__link {
     padding: 8px 10px;
     font-size: 16px;
 }
